@@ -6,8 +6,75 @@
     -moz-box-sizing: border-box;
 }
 
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
 img {
     width: 100%;
+}
+
+header {
+    background-color: #e63946;
+    display: flex;
+    justify-content: center;
+}
+
+header p,
+footer p {
+    padding: 2%;
+    color:#f1faee;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: #1d3557;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    padding: 2%;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    color: #457b9d;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    padding: 3% 0 1% 0;
+}
+
+h3 {
+    color: #a8dadc;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    padding: 2% 0 0.5% 0;
+}
+
+p {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    padding: 0 0 3% 0;
 }
 
 .fullContainer {
@@ -29,6 +96,12 @@ img {
 
 .flexContainer>* {
     width: 100%;
+}
+
+footer {
+    background-color: #1d3557;
+    display: flex;
+    justify-content: center;
 }
 
 /* ===============================
@@ -59,6 +132,18 @@ img {
     .flexContainer>* {
         width: calc(25% - 20px);
     }
+
+    header p {
+        padding: 1%;
+    }
+
+    h1 {
+        padding: 1%;
+    }
+
+    h2 {
+        padding: 1% 0 1% 0;
+    }
 }
 
 /* 992px */
@@ -70,6 +155,10 @@ img {
 @media screen and (min-width:1200px) {
     .container {
         max-width: 1300px;
+    }
+
+    header p {
+        padding: 1%;
     }
 }
 
